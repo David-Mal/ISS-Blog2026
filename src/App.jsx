@@ -56,7 +56,7 @@ const DEFAULT_WEEKS = [
   },
 ]
 
-const STORAGE_KEY = 'iss-blog-weeks-v2'
+const STORAGE_KEY = 'iss-blog-weeks-v3'
 
 function loadWeeks() {
   try {
