@@ -40,6 +40,14 @@ const DEFAULT_WEEKS = [
   },
   {
     id: 5,
+    weekNum: 5,
+    label: 'Week 5',
+    content:
+      '\Handed in our project at the lab today — mix of nerves and relief, but the lab teacher actually had good things to say, so we\'re calling that a win.',
+    image: "/week5.jpeg",
+  },
+  {
+    id: 6,
     weekNum: 6,
     label: 'Week 6',
     content:
