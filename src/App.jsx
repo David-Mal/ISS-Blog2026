@@ -98,7 +98,7 @@ const DEFAULT_WEEKS = [
     label: 'Week 8',
     content:
       'Avengers, assemble! New challenge, new team, same ambition.',
-    image: "/week8.jpeg",
+    image: "/week8.png",
   }, 
 
   {
@@ -111,7 +111,7 @@ const DEFAULT_WEEKS = [
   },
 ]
 
-const STORAGE_KEY = 'iss-blog-weeks-v5'
+const STORAGE_KEY = 'iss-blog-weeks-v6'
 
 function loadWeeks() {
   try {
