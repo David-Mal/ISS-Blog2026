@@ -89,7 +89,7 @@ const DEFAULT_WEEKS = [
     label: 'Week 7',
     content:
       'We worked on this new project. Each member got some tasks for this brand new project that we received. On Wendnesday we turned in our work and it was good!',
-    image: "/week7.jpg",
+    image: "/week7.jpeg",
   },
 
   {
@@ -111,7 +111,7 @@ const DEFAULT_WEEKS = [
   },
 ]
 
-const STORAGE_KEY = 'iss-blog-weeks-v4'
+const STORAGE_KEY = 'iss-blog-weeks-v5'
 
 function loadWeeks() {
   try {
