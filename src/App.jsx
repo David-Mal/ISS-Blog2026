@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 
 const TEAM = [
-  { task: 'Team-Leader', members: 'Andrei Maximus'}
+  { task: 'Team-Leader', members: 'Andrei Maximus'}, 
   { task: 'mini-team 1', members: 'David & Taisia' },
   { task: 'mini-team 2', members: 'Luiza & Ale' },
   { task: 'mini-team 3', members: 'Dragoș & Robert' },
