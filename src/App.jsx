@@ -1,10 +1,39 @@
 import { useState, useEffect, useRef } from 'react'
 
 const TEAM = [
-  { task: 'Task 7', members: 'David & Taisia' },
-  { task: 'Task 9', members: 'Luiza & Ale' },
-  { task: 'Task 6', members: 'Dragoș & Robert' },
+  { task: 'Team-Leader', members: 'Andrei Maximus'}
+  { task: 'mini-team 1', members: 'David & Taisia' },
+  { task: 'mini-team 2', members: 'Luiza & Ale' },
+  { task: 'mini-team 3', members: 'Dragoș & Robert' },
 ]
+
+const LEFT_PANEL = [
+  { name: 'Maxim', src: '/maxim.png' },
+  { name: 'Dragoș', src: '/dragos.png' },
+  { name: 'Robert', src: '/robert.png' },
+]
+
+const RIGHT_PANEL = [
+  { name: 'Taisia', src: '/taisia.png' },
+  { name: 'David', src: '/david.png' },
+  { name: 'Ale', src: '/ale.png' },
+  { name: 'Luiza', src: '/luiza.png' },
+]
+
+function SidePanel({ members, side }) {
+  return (
+    <div className={`side-panel side-panel--${side}`}>
+      <div className="side-fade side-fade--top" />
+      {members.map((m) => (
+        <div key={m.name} className="side-photo-item">
+          <img src={m.src} alt={m.name} className="side-photo" />
+          <div className={`side-overlay side-overlay--${side}`} />
+        </div>
+      ))}
+      <div className="side-fade side-fade--bottom" />
+    </div>
+  )
+}
 
 const DEFAULT_WEEKS = [
   {
@@ -54,9 +83,35 @@ const DEFAULT_WEEKS = [
       'We got the project from 922/2 and we discussed our tasks for this new assignment.',
     image: "/week6.jpeg",
   },
+  {
+    id: 7,
+    weekNum: 7,
+    label: 'Week 7',
+    content:
+      'We worked on this new project. Each member got some tasks for this brand new project that we received. On Wendnesday we turned in our work and it was good!',
+    image: "/week7.jpg",
+  },
+
+  {
+    id: 8,
+    weekNum: 8,
+    label: 'Week 8',
+    content:
+      'Avengers, assemble! New challenge, new team, same ambition.',
+    image: "/week8.jpeg",
+  }, 
+
+  {
+    id: 9,
+    weekNum: 9,
+    label: 'Week 9',
+    content:
+      'Tricky week for the team. Good thing we managed to merge the projects and finish the assignment in time.',
+    image: "/week9.jpeg",
+  },
 ]
 
-const STORAGE_KEY = 'iss-blog-weeks-v3'
+const STORAGE_KEY = 'iss-blog-weeks-v4'
 
 function loadWeeks() {
   try {
@@ -272,6 +327,8 @@ export default function App() {
   }
 
   return (
+    <>
+    <SidePanel members={LEFT_PANEL} side="left" />
     <div className="page">
       <header className="site-header">
         <h1 className="site-title">Blog de blog</h1>
@@ -334,5 +391,7 @@ export default function App() {
         />
       )}
     </div>
+    <SidePanel members={RIGHT_PANEL} side="right" />
+  </>
   )
 }
