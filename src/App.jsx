@@ -109,9 +109,63 @@ const DEFAULT_WEEKS = [
       'Tricky week for the team. Good thing we managed to merge the projects and finish the assignment in time.',
     image: "/week9.jpeg",
   },
+
+  {
+    id: 10,
+    weekNum: 10,
+    label: 'Week 10',
+    content:
+      'Too many errors this week...',
+    image: "/w10_combo.png",
+  },
+
+  {
+    id: 11,
+    weekNum: 10,
+    label: 'Still week 10',
+    content:
+      'A few more errors...',
+    image: "/w10_combo2.png",
+  },
+
+  {
+    id: 12,
+    weekNum: 10,
+    label: 'Still on 10',
+    content: 
+      'We\'re getting there!',
+    image: "/w10_7.jpeg",
+  },
+
+  {
+    id: 13,
+    weekNum: 11,
+    label: 'Week 11',
+    content:
+      '500.000 errors later and after many merge conflicts and failed pull requests we finally did it and handed in our project.',
+    image: "/w11_1.JPG",
+  },
+
+  {
+    id: 14,
+    weekNum: 11,
+    label: 'Week 11',
+    content:
+      '',
+    image: "/w11_2.JPG",
+  },
+
+  {
+    id: 15,
+    weekNum: 11,
+    label: 'Week 11',
+    content:
+      '',
+    image: "/w11_3.JPG",
+  },
 ]
 
-const STORAGE_KEY = 'iss-blog-weeks-v7'
+const STORAGE_KEY = 'iss-blog-weeks-v8'
 
 function loadWeeks() {
   try {
