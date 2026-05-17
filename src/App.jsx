@@ -163,9 +163,18 @@ const DEFAULT_WEEKS = [
       '',
     image: "/w11_3.JPG",
   },
+
+  {
+    id: 16,
+    weekNum: 12,
+    label: 'Week 12',
+    content:
+      'Team 925 and Team 927 are officially joining forces. This isn\’t just a collaboration; it\’s an alliance.',
+    image: "/w12_1.JPG",
+  },
 ]
 
-const STORAGE_KEY = 'iss-blog-weeks-v8'
+const STORAGE_KEY = 'iss-blog-weeks-v9'
 
 function loadWeeks() {
   try {
