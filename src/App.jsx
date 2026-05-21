@@ -39,24 +39,24 @@ const DEFAULT_WEEKS = [
   {
     id: 1,
     weekNum: 1,
-    label: 'Week 1',
+    label: 'Week 1 · 25 FEB',
     content:
-      'We selected our teams and chose the project we will be working on throughout the semester.',
+      'We selected our teams and chose the project we will be working on throughout the semester. We were happy to work in a team, but also there was a sense of fear because we were unsure about what we were getting into. We also set up our GitHub repository. Every single task had to be broken down into chunks of maximum 30 minutes, our board absolutely exploded. Seeing over 40 micro-tasks lined up was terrifying for a second, but it quickly turned into a weird sense of relief. The blueprint is done, the rules of engagement are set, and we are officially ready for the coding phase.',
     image: "/im1.jpeg",
   },
   {
     id: 2,
     weekNum: 2,
-    label: 'Week 2 · 6 martie',
+    label: 'Week 2 · 6 MAR',
     content:
-      'We divided the project into multiple parts, used diagrams and UML so that we can understand better what we needed to do. Our team leader selected the tasks we were going to work on.\n\nTask 7 → David & Taisia · Task 9 → Luiza & Ale · Task 6 → Dragoș & Robert',
+      'We divided the project into multiple parts, used diagrams and UML so that we can understand better what we needed to do. Our team leader selected the tasks we were going to work on.\n\nTask 7 → David & Taisia · Task 9 → Luiza & Ale · Task 6 → Dragoș & Robert. We were all a bit nervous about the project, but we were also excited to start working on it. We had a meeting with our lab teacher and we got some feedback on our project.',
     image: "/im2.jpeg",
   },
   {
     id: 3,
     weekNum: 3,
-    label: 'Week 3',
-    content: 'Working on our page design at the seminar.',
+    label: 'Week 3 · 11 MAR',
+    content: 'Working on our page design at the seminar. The idea was simple: to lay on a piece of paper the design of our application. The execution, however.... It was not that easy as we thought it would be. We had a few versions that we tossed to the bin before submitting our final one. It was fun in the end.',
     image: "/im3.jpeg",
   },
   {
@@ -64,31 +64,31 @@ const DEFAULT_WEEKS = [
     weekNum: 4,
     label: 'Week 4',
     content:
-      'Every member of the team worked on and finished their respective tasks. Heading into week 5 ready to present our work at the lab.',
+      'The assignment for this week had a sentence that hit us like a freight train: "Implement your design as a WinUI 3 app that uses MVVM UI pattern. Yes, the entire app." Going from drawing neat, abstract UML boxes and drawing the design of the application on sheets of paper to writing a full-blown WinUI 3 application was a serious reality check. Every member of the team worked on and finished their respective tasks. This task was interesting, having a few discord meetings, some merge conflicts but we figured it all out in the end. Heading into week 5 ready to present our work at the lab.',
     image: null,
   },
   {
     id: 5,
     weekNum: 5,
-    label: 'Week 5',
+    label: 'Week 5 · 25 MAR',
     content:
-      '\Handed in our project at the lab today — mix of nerves and relief, but the lab teacher actually had good things to say, so we\'re calling that a win.',
+      '\Handed in our project at the lab today — mix of nerves and relief. The stress was entirely real, just look at the defensive forehead-rub happening in the back left. We rode a complete rollercoaster from absolute, silent despair (convinced the final submission was cursed) to sheer relief. Against all odds, and despite the guys looming in the back holding their breath, the lab teacher actually had good things to say! We survived the great panic. We\'re officially calling this a massive win.',
     image: "/week5.jpeg",
   },
   {
     id: 6,
     weekNum: 6,
-    label: 'Week 6',
+    label: 'Week 6 · 1 APR',
     content:
-      'We got the project from 922/2 and we discussed our tasks for this new assignment.',
+      'We got the project from 922/2 and we discussed our tasks for this new assignment. Imagine the collective whiplash when we found out we had to abandon all our hard work, and adopt group 922/2\'s codebase instead. But after the initial shock wore off, we hopped into the Discord trenches to dissect our new reality: the MovieApp. Maxim fired up the screen share, and we used a highly sophisticated Notepad file to draft our battle plan.',
     image: "/week6.jpeg",
   },
   {
     id: 7,
     weekNum: 7,
-    label: 'Week 7',
+    label: 'Week 7 · 6 APR',
     content:
-      'We worked on this new project. Each member got some tasks for this brand new project that we received. On Wendnesday we turned in our work and it was good!',
+      'We all grinded through our assigned tasks for the new codebase, and by Wednesday, we finally wrapped it up. The final result? Actually incredible. Huge shoutout to Maxim, the absolute MVP of this sprint. Seeing his late-night message drop—confirming the assignment was officially done and pushed to GitHub—was the ultimate relief. But the real flex? Hitting over 80% code coverage across the board, with most of it sitting at a ridiculous 98%+. Earning those reaction emojis in the chat was well-deserved. Nothing beats wrapping up a chaotic project just in time to log off and enjoy the holidays!',
     image: "/week7.jpeg",
   },
 
@@ -97,7 +97,7 @@ const DEFAULT_WEEKS = [
     weekNum: 8,
     label: 'Week 8',
     content:
-      'Avengers, assemble! New challenge, new team, same ambition.',
+      'Avengers, assemble! New challenge, new team, same ambition. After surviving the recent project chaos, we definitely earned this golden-hour squad photo. We took a much-needed screen break and headed out to Gheorgheni Park for a proper team-building session. Grabbing food together and just hanging out, talking, and laughing off the stress was exactly what we needed. It was a total success—the energy in this group is unmatched, and everyone is genuinely hyped to finally be working together in this lineup. Here\'s to whatever comes next!',
     image: "/week8.png",
   }, 
 
@@ -140,7 +140,7 @@ const DEFAULT_WEEKS = [
   {
     id: 13,
     weekNum: 11,
-    label: 'Week 11',
+    label: 'Week 11 · 13 MAY',
     content:
       '500.000 errors later and after many merge conflicts and failed pull requests we finally did it and handed in our project.',
     image: "/w11_1.JPG",
@@ -174,7 +174,7 @@ const DEFAULT_WEEKS = [
   },
 ]
 
-const STORAGE_KEY = 'iss-blog-weeks-v9'
+const STORAGE_KEY = 'iss-blog-weeks-v10'
 
 function loadWeeks() {
   try {
